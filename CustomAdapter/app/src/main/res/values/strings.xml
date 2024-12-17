@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CustomAdapter</string>
+
+    <string-array name="sex_array">
+        <item>UNKNOWN</item>
+        <item>MAN</item>
+        <item>WOMAN</item>
+    </string-array>
+
+</resources>
