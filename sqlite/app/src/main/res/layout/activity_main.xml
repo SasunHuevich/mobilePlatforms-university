@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"/>
+
+    <EditText
+        android:hint="title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title" />
+
+    <EditText
+        android:hint="atrist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/artist" />
+
+    <EditText
+        android:hint="year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/year" />
+
+    <EditText
+        android:hint="duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/duration" />
+    
+    <Button
+        android:id="@+id/addTuneButton"
+        android:text="Add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/totalCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Count: 0"
+        android:textSize="25dp"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/totalDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Duration: 0 sec"
+        android:textSize="25dp"
+        android:padding="16dp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/playlist" />
+
+  </LinearLayout>
